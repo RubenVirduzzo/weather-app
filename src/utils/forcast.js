@@ -13,7 +13,7 @@ const forcast = (latitud, longitud, callback) => {
         } else if (body.error) {
             callback(`\nOpss! An error has occurred: ${body.error.info}\n`, undefined)
         } else {
-            console.log(body.current)
+            
             callback(undefined, {
                 icon: body.current.weather_icons[0],
                 forecast: body.current.weather_descriptions[0],

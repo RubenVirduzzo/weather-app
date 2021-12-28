@@ -57,10 +57,11 @@ app.get('/weather', (req, res) => {
             return res.send(error)
         } 
 
-        forcast(latitud, longitud, (error, {icon, forecast, temperature, feelslike}) => {
+        forcast(latitud, longitud, (error, {icon, forecast, temperature, feelslike} = {}) => {
             if (error) {
                 return res.send(error)
             } 
+            
             res.send({
                 icon,
                 forecast,

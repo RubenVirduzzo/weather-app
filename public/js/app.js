@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit', (event) => {
     fetch(`/weather?address=${location}`).then((response) => {
     response.json().then((data) => {
         if (data.error) {
-            section.innerHTML = `<h1>${data.error}</h1>`
+            section.innerHTML = `<p class="forecast">${data.error}</p>`
         } else {
         
             section.innerHTML += `<div class="forecast">

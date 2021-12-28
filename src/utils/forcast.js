@@ -26,5 +26,3 @@ const forcast = (latitud, longitud, callback) => {
 }
 
 module.exports = forcast
-
-/* `Right now is ${body.current.weather_descriptions}. It is currently ${body.current.temperature} degrees out, it is feels like ${body.current.feelslike} degrees. ${body.current.weather_icons[0]}` */

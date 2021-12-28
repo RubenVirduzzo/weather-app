@@ -12,12 +12,7 @@ weatherForm.addEventListener('submit', (event) => {
         if (data.error) {
             section.innerHTML = `<h1>${data.error}</h1>`
         } else {
-            /*  icon,
-                forecast,
-                temperature,
-                feelslike,
-                location,
-                address: */
+        
             section.innerHTML += `<div class="forecast">
                                     <p><img src="${data.icon}" alt="Icon"></p>
                                     <hr>

@@ -31,6 +31,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
+        msg: 'Create by Ruben Virduzzo',
         image: 'img/foto.jpeg'
     })
 })
@@ -38,7 +39,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        msg: 'I momenti difficili sono temporanei, non permettere che essi ti cambino, perché quando tutto tornerà alla normalità tu sarai diverso!'
+        msg: 'Helpfull text!'
     })
 })
 

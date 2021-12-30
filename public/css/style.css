@@ -20,7 +20,7 @@ header {
     background-position: bottom;
     background-position-x: -90px;
     width: 100%;
-    background-image: url(../img/background.jpeg);
+    background: rgba(200, 200, 200, .5);
     box-shadow: 2px 2px 15px black;
     border-radius: 0 0 12px 12px;
 }
